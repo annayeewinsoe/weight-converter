@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+:root {
+  --tone1: #ffbd84;
+  --tone2: #ffcb9d;
+  --tone3: #ffd8b7;
+  --tone4: #ffe6d0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  color: #444;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--tone4);
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+}
+
+input {
+  width: 100%;
+  font-size: 50px;
+  margin: 20px 0;
+  padding: 20px 40px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+
+input:focus {
+  outline: 5px solid var(--tone3);
+}
+
+.buttons {
+  display: grid;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  display: block;
+  flex: 1 1 auto;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--tone1);
+  padding: 20px 0;
+  margin: 10px;
+  font-size: 20px;
+  outline: none;
+}
+
+button:hover {
+  outline: 5px solid var(--tone2);
+}
+
+#output {
+  overflow-wrap: break-word;
+  border: 5px solid var(--tone2);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+#output p {
+  text-align: center;
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  overflow-wrap: break-word;
+}
+
+#github img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+#github p {
+  word-break: break-all;
+}
+
+@media screen and (max-width: 430px) {
+  .container {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  input {
+    font-size: 40px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+
+  #output p {
+    font-size: 20px;
+  }
+}
